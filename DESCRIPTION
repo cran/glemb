@@ -1,0 +1,34 @@
+Package: glemb
+Title: Multiple Imputation Using the General Location Model with the
+        EMB Algorithm
+Version: 0.1.4
+Authors@R: person("Paul", "Allison", email = "allison@statisticalhorizons.com",
+    role = c("aut", "cre"))
+Description: Provides multiple imputation for mixed continuous and categorical
+    data using the General Location Model (Olkin and Tate (1961)
+    <doi:10.1214/aoms/1177705052>; Little and Schluchter (1985)
+    <doi:10.1093/biomet/72.3.497>) combined with the Expectation-Maximization
+    with Bootstrapping (EMB) algorithm of Honaker, King and Blackwell (2011)
+    <doi:10.18637/jss.v045.i07>. Categorical variables are specified via the
+    noms option; all other variables are treated as continuous. The package
+    wraps the EM implementation in the 'mix' package and extends it with a
+    bootstrap wrapper to produce proper multiple imputations in the sense of
+    Rubin (1987, ISBN:978-0-471-08705-2).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Imports: mix
+Suggests: mice, mitml, testthat (>= 3.0.0), knitr, rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Depends: R (>= 4.0.0)
+URL: https://github.com/pauldallison/glemb
+BugReports: https://github.com/pauldallison/glemb/issues
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-10-05 00:15:34 UTC; allis
+Author: Paul Allison [aut, cre]
+Maintainer: Paul Allison <allison@statisticalhorizons.com>
+Repository: CRAN
+Date/Publication: 2026-10-15 17:30:12 UTC
